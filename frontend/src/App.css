@@ -1,0 +1,131 @@
+html {
+  font-size: 16px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  /* background: #0c0821; */
+  background: #020c1b;
+  font-family: "Nunito", sans-serif;
+  color: #fff;
+}
+
+body::-webkit-scrollbar {
+  width: 0.2em;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
+
+.containerBox {
+  width: 1200px;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.cardWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 140px);
+}
+
+.react-tel-input .country-list {
+  outline: none;
+  z-index: 1;
+  list-style: none;
+  position: absolute;
+  padding: 0;
+  margin: 10px 0 10px -1px;
+  box-shadow: 1px 2px 10px rgb(0 0 0 / 35%);
+  background-color: #1f2937 !important;
+  width: 300px;
+  max-height: 200px;
+  overflow-y: scroll;
+  border-radius: 0 0 3px 3px;
+}
+
+.react-tel-input .country-list::-webkit-scrollbar-thumb {
+  background-color: rgb(224, 44, 44);
+  outline: 1px solid rgb(236, 77, 3);
+}
+
+.react-tel-input .flag-dropdown.open .selected-flag {
+  background: #323232 !important;
+  border-radius: 3px 0 0 0;
+  /* margin-right: 10rem !important; */
+}
+
+.react-tel-input .form-control {
+  font-size: 1rem !important;
+  color: #fff !important;
+  letter-spacing: 0.01rem;
+  margin-left: 2.5rem !important;
+  padding-left: 0.5rem !important;
+  background: #15274e !important;
+  border: none !important;
+  border-radius: 0 7px 7px 0 !important;
+  line-height: 35px !important;
+  height: 2.5rem !important;
+  width: 4rem !important;
+}
+
+.react-tel-input .selected-flag {
+  outline: none !important;
+  position: relative;
+  width: 38px;
+  height: 100%;
+  padding: 0 0 0 8px;
+  border: none !important;
+  border-radius: 7px 0 0 7px !important;
+  background: #15274e !important;
+}
+
+.react-tel-input .country-list .country.highlight {
+  background-color: #4d8ce3 !important;
+}
+
+.react-tel-input .flag-dropdown {
+  background-color: #1f2937 !important;
+  border: 0px solid #cacaca !important;
+  border-radius: 17px 0 0 17px;
+}
+
+.react-tel-input .flag-dropdown.open .selected-flag {
+  background-color: #1f2937 !important;
+}
